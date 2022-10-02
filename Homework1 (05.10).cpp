@@ -18,19 +18,21 @@ int main() {
 	int a;
 	cout << "Введіть номер місяця" << endl;
 	cin >> a;
-	if (a == 1) cout << "january"<<endl;
-	if (a == 2) cout << "february" << endl;
-	if (a == 3) cout << "march" << endl;
-	if (a == 4) cout << "april" << endl;
-	if (a == 5) cout << "may" << endl;
-	if (a == 6) cout << "june" << endl;
-	if (a == 7) cout << "july" << endl;
-	if (a == 8) cout << "august" << endl;
-	if (a == 9) cout << "september" << endl;
-	if (a == 10) cout << "october" << endl;
-	if (a == 11) cout << "november" << endl;
-	if (a == 12) cout << "december" << endl;
-	if (a!=1 && a != 2 && a != 3 && a != 4 && a != 5 && a != 6 && a != 7 && a != 8 && a != 9 && a != 10 && a != 11 && a != 12) cout << "invalid month number" << endl;
+	switch(a){
+	case 1: cout << "january" << endl; break;
+	case 2: cout << "february" << endl; break;
+	case 3: cout << "march" << endl; break;
+	case 4: cout << "april" << endl; break;
+	case 5: cout << "may" << endl; break;
+	case 6: cout << "june" << endl; break;
+	case 7: cout << "july" << endl; break;
+	case 8: cout << "august" << endl; break;
+	case 9: cout << "september" << endl; break;
+	case 10: cout << "october" << endl; break;
+	case 11: cout << "november" << endl; break;
+	case 12: cout << "december" << endl; break;
+	default: cout << "invalid month number";
+	}
 
 	return 0;
 }
@@ -61,17 +63,18 @@ int main() {
 	cout << "Enter day and month" << endl;
 	cin >> day >> month;
 	if ((month == 3 && day >= 21 && day <= 31) || (month == 4 && day >= 1 && day <= 19)) cout << "it's aries"; 
-	if ((month == 4 && day >= 20 && day <= 30) || (month == 5 && day >= 1 && day <= 20)) cout << "it's taurus";
-	if ((month == 5 && day >= 21 && day <= 31) || (month == 6 && day >= 1 && day <= 20)) cout << "it's gemini";
-	if ((month == 6 && day >= 21 && day <= 30) || (month == 7 && day >= 1 && day <= 22)) cout << "it's cancer";
-	if ((month == 7 && day >= 23 && day <= 31) || (month == 8 && day >= 1 && day <= 22)) cout << "it's leo";
-	if ((month == 8 && day >= 23 && day <= 31) || (month == 9 && day >= 1 && day <= 22)) cout << "it's virgo";
-	if ((month == 9 && day >= 23 && day <= 30) || (month == 10 && day >= 1 && day <= 22)) cout << "it's libra";
-	if ((month == 10 && day >= 23 && day <= 31) || (month == 11 && day >= 1 && day <= 21)) cout << "it's scorpio";
-	if ((month == 11 && day >= 22 && day <= 30) || (month == 12 && day >= 1 && day <= 21)) cout << "it's sagittarius";
-	if ((month == 12 && day >= 22 && day <= 31) || (month == 1 && day >= 1 && day <= 19)) cout << "it's capricorn";
-	if ((month == 1 && day >= 20 && day <= 31) || (month == 2 && day >= 1 && day <= 18)) cout << "it's aquarius";
-	if ((month == 2 && day >= 19 && day <= 28) || (month == 3 && day >= 1 && day <= 20)) cout << "it's pisces";
+	else if ((month == 4 && day >= 20 && day <= 30) || (month == 5 && day >= 1 && day <= 20)) cout << "it's taurus";
+	else if ((month == 5 && day >= 21 && day <= 31) || (month == 6 && day >= 1 && day <= 20)) cout << "it's gemini";
+	else if ((month == 6 && day >= 21 && day <= 30) || (month == 7 && day >= 1 && day <= 22)) cout << "it's cancer";
+	else if ((month == 7 && day >= 23 && day <= 31) || (month == 8 && day >= 1 && day <= 22)) cout << "it's leo";
+	else if ((month == 8 && day >= 23 && day <= 31) || (month == 9 && day >= 1 && day <= 22)) cout << "it's virgo";
+	else if ((month == 9 && day >= 23 && day <= 30) || (month == 10 && day >= 1 && day <= 22)) cout << "it's libra";
+	else if ((month == 10 && day >= 23 && day <= 31) || (month == 11 && day >= 1 && day <= 21)) cout << "it's scorpio";
+	else if ((month == 11 && day >= 22 && day <= 30) || (month == 12 && day >= 1 && day <= 21)) cout << "it's sagittarius";
+	else if ((month == 12 && day >= 22 && day <= 31) || (month == 1 && day >= 1 && day <= 19)) cout << "it's capricorn";
+	else if ((month == 1 && day >= 20 && day <= 31) || (month == 2 && day >= 1 && day <= 18)) cout << "it's aquarius";
+	else if ((month == 2 && day >= 19 && day <= 29) || (month == 3 && day >= 1 && day <= 20)) cout << "it's pisces";
+	else cout<<"invalid data";
 	return 0;
 }
 
@@ -84,8 +87,25 @@ int main() {
 	int a, b;
 	cout << "enter two numbers" << endl;
 	cin >> a >> b;
-	cout << "arithmetic mean " << (a + b) / 2 << endl;
+	cout << "arithmetic mean " << (a + b) / 2.0 << endl;
 	cout << "geometric mean " << sqrt(a * b) << endl;
+
+	return 0;
+
+}
+
+//2
+#include <iostream>
+using namespace std;
+int main() {
+	int h, m, s, f;
+	//положення годинникової стрілки міняється кожні 2 хв
+	cout << "Enter hours, minutes and seconds" << endl;
+	cin >> h >> m >> s;
+	if ((h >= 12 || h < 0) || (m < 0 || m >= 60) || (s < 0 || s >= 60)) cout << "data is incorrect";
+	else {
+		cout << "f = " << (h * 60 + m) / 2 << endl;
+	}
 
 	return 0;
 
