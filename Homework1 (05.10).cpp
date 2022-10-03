@@ -10,6 +10,19 @@ int main() {
 }
 
 
+//7
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+  double b, g;
+  cout << "enter beta and gamma "<<endl;
+  cin >> b >> g;
+  double pi = 2 * asin(1.0);
+  cout << (b + pow(sin(pow(pi, 4)), 2)) / (cos(2) + abs(1 / tan(g)));
+  return 0;
+}
+
 
 //15. За введеним номером місяця року, вивести його назву
 #include <iostream>
