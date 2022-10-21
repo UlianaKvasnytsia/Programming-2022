@@ -1,3 +1,4 @@
+//6th
 #include <iostream>
 using namespace std;
 int main() {
@@ -19,7 +20,5 @@ int main() {
 		y = x * (3 - x) / pow(1 - x, 3);
 		cout << "\t" << x << "\t\t" << sum << "\t\t" << y << "\t\t" << abs((sum - y) / y)*100 <<" n= " << n << endl;
 	}
-
-
 	return 0;
 }
