@@ -1,6 +1,6 @@
 //1.	Ввести елементи матриці розміру n x m. 
 //Впорядкувати (переставити) рядки матриці по зростанню значень 
-//найменших елементів рядків. (Можна користуватися додатковим масивом)
+/*найменших елементів рядків. (Можна користуватися додатковим масивом)
 #include <iostream>
 using namespace std;
 int main() {
@@ -35,6 +35,55 @@ int main() {
             }
         }
     }
+    cout << "the sorted matrix: " << endl;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            cout << matrix[i][j] << " ";
+        } cout << endl;
+    }
+    return 0;
+}*/
+
+
+//function method
+#include <iostream>
+using namespace std;
+void sort(int** mat, int n, int m) {
+    int min = INT_MAX;
+    int* arr = new int[n];
+    for (int i = 0; i < n; i++) {
+        min = mat[i][0];
+        for (int j = 0; j < m; j++) {
+            if (mat[i][j] < min) min = mat[i][j];
+        }
+        arr[i] = min;
+    }
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                swap(arr[j], arr[j + 1]);
+                for (int o = 0; o < m; o++) {
+                    swap(mat[j][o], mat[j + 1][o]);
+                }
+            }
+        }
+    }
+}
+int main() {
+    int n, m;
+    cout << "enter the size of a matrix: " << endl;
+    cin >> n >> m;
+    int** matrix = new int* [n];
+    for (int i = 0; i < n; i++) {
+        matrix[i] = new int[m];
+    }
+    cout << "enter the matrix: " << endl;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            cin >> matrix[i][j];
+        }
+    }
+    sort(matrix, n, m);
     cout << "the sorted matrix: " << endl;
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
