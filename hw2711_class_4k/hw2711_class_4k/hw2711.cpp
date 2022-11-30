@@ -64,8 +64,8 @@ void sort(Rectangle* arr, int n) {
 }
 
 int main() {
-	const int n = 3;
-	Rectangle* arr = new Rectangle[n];
+	const int n = 10;
+	Rectangle arr[n];
 	cout << "enter x and y for every point of a rectangle" << endl << "start with bottom left one and go by the clock" << endl;
 	for (int i = 0; i < n; i++) {
 		cin >> arr[i];
