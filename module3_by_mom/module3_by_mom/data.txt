@@ -1,0 +1,6 @@
+fiat gh65478 2011 red
+opel gh34567 2000 red
+opel th67487 2005 blue
+lanos ty2345 2008 gold
+hundai rty675 2010 red
+mercedes ht78920 2011 red
