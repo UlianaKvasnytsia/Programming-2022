@@ -1,0 +1,6 @@
+m kilo nokia 350 blue 32
+m koki nokia 400 black 64
+r lil nokia 500 100 yes
+r heg nokia 370 50 no
+m giro nokia 280 red 128
+r ded nokia 300 75 yes

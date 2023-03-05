@@ -1,0 +1,7 @@
+r fil lg 770 120 no
+m kia lg 356 blue 32
+r hoke lg 700 120 yes
+r coli lg 505 90 yes
+r hro lg 380 55 no
+m glovo lg 289 red 64
+r toy lg 310 70 yes

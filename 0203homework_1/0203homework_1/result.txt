@@ -1,0 +1,113 @@
+
+sorted by price + total : 
+name: giro
+firm: nokia
+price: 280
+color: red
+ram: 128
+
+name: glovo
+firm: lg
+price: 289
+color: red
+ram: 64
+
+name: ded
+firm: nokia
+price: 300
+radius: 75
+autoanswer: yes
+
+name: toy
+firm: lg
+price: 310
+radius: 70
+autoanswer: yes
+
+name: kilo
+firm: nokia
+price: 350
+color: blue
+ram: 32
+
+name: kia
+firm: lg
+price: 356
+color: blue
+ram: 32
+
+name: heg
+firm: nokia
+price: 370
+radius: 50
+autoanswer: no
+
+name: hro
+firm: lg
+price: 380
+radius: 55
+autoanswer: no
+
+name: koki
+firm: nokia
+price: 400
+color: black
+ram: 64
+
+name: lil
+firm: nokia
+price: 500
+radius: 100
+autoanswer: yes
+
+name: coli
+firm: lg
+price: 505
+radius: 90
+autoanswer: yes
+
+name: hoke
+firm: lg
+price: 700
+radius: 120
+autoanswer: yes
+
+name: fil
+firm: lg
+price: 770
+radius: 120
+autoanswer: no
+
+total income: 5510
+
+radiophones with an autoanswer: 
+name: ded
+firm: nokia
+price: 300
+radius: 75
+autoanswer: yes
+
+name: toy
+firm: lg
+price: 310
+radius: 70
+autoanswer: yes
+
+name: lil
+firm: nokia
+price: 500
+radius: 100
+autoanswer: yes
+
+name: coli
+firm: lg
+price: 505
+radius: 90
+autoanswer: yes
+
+name: hoke
+firm: lg
+price: 700
+radius: 120
+autoanswer: yes
+
