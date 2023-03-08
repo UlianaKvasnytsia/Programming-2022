@@ -1,0 +1,8 @@
+2
+Kvasnytsia Halyna pmi107 3 
+p 100 math 10 pocket
+e 101 algo comp
+p 83 dyskra 5 bag
+Yevtukh Ira pma23 2
+e 96 math comp
+p 207 fizra 20 leg
