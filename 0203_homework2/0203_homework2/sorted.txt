@@ -1,0 +1,23 @@
+number: 101
+subject: algo
+eName: comp
+
+number: 83
+subject: dyskra
+size: 5
+place: bag
+
+number: 207
+subject: fizra
+size: 20
+place: leg
+
+number: 96
+subject: math
+eName: comp
+
+number: 100
+subject: math
+size: 10
+place: pocket
+
