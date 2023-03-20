@@ -1,0 +1,11 @@
+10
+1 wao 40 lake 60
+1 water 33 sea 70
+2 truba 10 2 15
+2 car 37 5 170
+3 carpet 1 ocean 80 4 16 15 2
+1 wodnyy 55 ocean 110
+3 ampi 30 sea 45 6 70 7 10
+2 bus 42 30 100
+1 woda 18 river 40
+1 cola 53 river 70
